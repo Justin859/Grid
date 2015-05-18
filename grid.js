@@ -1,19 +1,16 @@
-function grid(){
-  $('tr').append('<div></div>')
-};
-
-
 
 $(document).ready(function(){
   for(var i = 0; i < 16; i++){
-    for(var j = 0; j < 16; j++){
-      grid();
+  $('#createTable').append('<table>' + '<tr>' + '</tr>' + '</table>');
     }
-  }
+    for(var j = 0; j < 16; j++){
+      $('tr').append('<td></td>');
+    }
 });
 
+
 $(document).ready(function(){
-  $('div').hover(function(){
+  $('td').hover(function(){
     $(this).css('background-color', 'green');
   });
 });
